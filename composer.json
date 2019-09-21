@@ -1,5 +1,5 @@
 {
-    "name": "vp/skeleton",
+    "name": "actb/skeleton",
     "description": "Our skeleton for the Laravel specific packages",
     "keywords": [
         "vp",
@@ -16,21 +16,21 @@
         }
     ],
     "require": {
-        "php": "^7.1",
-        "illuminate/support": "5.8.*"
+        "php": "^7.2",
+        "illuminate/support": "6.*"
     },
     "require-dev": {
         "orchestra/testbench": "3.8.*",
-        "phpunit/phpunit": "^7.0"
+        "phpunit/phpunit": "^8.0"
     },
     "autoload": {
         "psr-4": {
-            "Vp\\Skeleton\\": "src"
+            "Actb\\Skeleton\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Vp\\Skeleton\\Tests\\": "tests"
+            "Actb\\Skeleton\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,10 +44,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Vp\\Skeleton\\SkeletonServiceProvider"
+                "Actb\\Skeleton\\SkeletonServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Vp\\Skeleton\\SkeletonFacade"
+                "Skeleton": "Actb\\Skeleton\\SkeletonFacade"
             }
         }
     }
